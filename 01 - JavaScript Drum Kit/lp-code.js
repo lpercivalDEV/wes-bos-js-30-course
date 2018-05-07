@@ -11,32 +11,45 @@ awesome courses, click here:  www.courses.wesbos.com   */
 window.addEventListener('keydown', function(e){
     // testing that event listener is working
     console.log(e); // woot! it works!
+    // can also use "console.log(e.keyCode);"
+
     // adding var to hold the query selector for audio tags when key is pressed
+        // old way of doing it:  const audio = document.querySelector('audio[data-key=65]')
+        // Using ES6 template strings instead:
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 
-    /* Data Attribute review - CSS:
-    [attr]
-    Represents an element with an attribute name of attr.
+    //checking to see if we have selected the right thing
+    console.log(audio);
+    if(!audio) return; //stops function from running
 
-    [attr=value]
-    Represents an element with an attribute name of attr whose value is exactly value.
+    //plays audio element if it exists
+    audio.play();
 
-    [attr~=value]
-    Represents an element with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value.
+        /* Data Attribute review - CSS:
+        [attr]
+        Represents an element with an attribute name of attr.
 
-    [attr|=value]
-    Represents an element with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen, - (U+002D). It is often used for language subcode matches.
+        [attr=value]
+        Represents an element with an attribute name of attr whose value is exactly value.
 
-    [attr^=value]
-    Represents an element with an attribute name of attr whose value is prefixed (preceded) by value.
+        [attr~=value]
+        Represents an element with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value.
 
-    [attr$=value]
-    Represents an element with an attribute name of attr whose value is suffixed (followed) by value.
+        [attr|=value]
+        Represents an element with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen, - (U+002D). It is often used for language subcode matches.
 
-    [attr*=value]
-    Represents an element with an attribute name of attr whose value contains at least one occurrence of value within the string.
+        [attr^=value]
+        Represents an element with an attribute name of attr whose value is prefixed (preceded) by value.
 
-    [attr operator value i]
-    Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range).
-     */
-    const audio = document.querySelector('audio[data-key=65]')
+        [attr$=value]
+        Represents an element with an attribute name of attr whose value is suffixed (followed) by value.
+
+        [attr*=value]
+        Represents an element with an attribute name of attr whose value contains at least one occurrence of value within the string.
+
+        [attr operator value i]
+        Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range).
+         */
+
+
 });
