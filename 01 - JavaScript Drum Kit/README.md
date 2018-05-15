@@ -2,5 +2,5 @@
 
 **Tech Used:** HTML5, CSS3, ES6 JavaScript
 
-**Audio Sources:**http://machines.hyperreal.org/   and  https://www.looperman.com/
+**Audio Sources:** http://machines.hyperreal.org/   and  https://www.looperman.com/
 
