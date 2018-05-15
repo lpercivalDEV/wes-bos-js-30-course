@@ -12,43 +12,43 @@
 
       <div class="keys-top">
           <!-- top row keys - qwerty -->
-          <div data-key="#" class="key">
+          <div data-key="81" class="key">
             <kbd>Q</kbd>
             <span class="sound">clap</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="87" class="key">
             <kbd>W</kbd>
             <span class="sound">hihat</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="69" class="key">
             <kbd>E</kbd>
             <span class="sound">kick</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="82" class="key">
             <kbd>R</kbd>
             <span class="sound">openhat</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="84" class="key">
             <kbd>T</kbd>
             <span class="sound">boom</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="89" class="key">
             <kbd>Y</kbd>
             <span class="sound">ride</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="85" class="key">
             <kbd>U</kbd>
             <span class="sound">snare</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="73" class="key">
             <kbd>I</kbd>
             <span class="sound">tom</span>
           </div>
-          <div data-key="#" class="key">
+          <div data-key="79" class="key">
             <kbd>O</kbd>
             <span class="sound">tink</span>
         </div>
-        <div data-key="#" class="key">
+        <div data-key="80" class="key">
           <kbd>P</kbd>
           <span class="sound">tink</span>
       </div>
@@ -96,39 +96,54 @@
 
   <div class="keys-bottom">
       <!-- bottom row keys - zxcv -->
-      <div data-key="#" class="key">
+      <div data-key="90" class="key">
         <kbd>Z</kbd>
         <span class="sound">clap</span>
       </div>
-      <div data-key="#" class="key">
+      <div data-key="88" class="key">
         <kbd>X</kbd>
         <span class="sound">hihat</span>
       </div>
-      <div data-key="#" class="key">
+      <div data-key="67" class="key">
         <kbd>C</kbd>
         <span class="sound">kick</span>
       </div>
-      <div data-key="#" class="key">
+      <div data-key="86" class="key">
         <kbd>V</kbd>
         <span class="sound">openhat</span>
       </div>
-      <div data-key="#" class="key">
+      <div data-key="66" class="key">
         <kbd>B</kbd>
         <span class="sound">boom</span>
       </div>
-      <div data-key="#" class="key">
+      <div data-key="78" class="key">
         <kbd>N</kbd>
         <span class="sound">ride</span>
       </div>
-      <div data-key="#" class="key">
+      <div data-key="77" class="key">
         <kbd>M</kbd>
         <span class="sound">snare</span>
       </div>
       <!-- END OF KEY SECTIONS -->
   </div>
-
   </div>
 
+  <!-- audio for top keys -->
+  <!-- all audio for top keys are Rhodes Polaris samples and can be found here: http://machines.hyperreal.org/manufacturers/Rhodes/Chroma-Polaris/ -->
+  <audio data-key="81" src="sounds/polaris/buoy-high.wav"></audio>
+  <audio data-key="87" src="sounds/polaris/buoy-low.wav"></audio>
+  <audio data-key="69" src="sounds/polaris/pwmsyncsweep.wav"></audio>
+  <audio data-key="82" src="sounds/polaris/rezdive.wav"></audio>
+  <audio data-key="84" src="sounds/polaris/rez-screech.wav"></audio>
+  <audio data-key="89" src="sounds/polaris/rez-sweep.wav"></audio>
+  <audio data-key="85" src="sounds/polaris/syncbass.wav"></audio>
+  <audio data-key="73" src="sounds/polaris/syncbass2.wav"></audio>
+  <audio data-key="79" src="sounds/polaris/syncsweep1.wav"></audio>
+  <audio data-key="80" src="sounds/polaris/syncsweep2.wav"></audio>
+
+
+
+  <!-- audio for middle keys are samples from the tutorial, only two were replaced due to missing samples -->
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
   <audio data-key="68" src="sounds/kick.wav"></audio>
@@ -138,6 +153,38 @@
   <audio data-key="74" src="sounds/snare.wav"></audio>
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
+
+  <!-- audio for bottom keys - loops -->
+  <!-- credit: mitchellfingers - house-beats; https://www.looperman.com/loops/detail/1223/house-beats-by-mitchellfingers-free-130bpm-house-drum-loop -->
+  <audio data-key="90" src="sounds/loops/house-beats.wav"></audio>
+
+  <!-- credit: Sandrique - house-loop; https://www.looperman.com/loops/detail/591/house-loop-by-sandrique-free-130bpm-house-drum-loop -->
+  <audio data-key="88" src="sounds/loops/house-loop.wav"></audio>
+
+  <!-- credit: highz - filler; https://www.looperman.com/loops/detail/21680/filler-by-highz-free-130bpm-deep-house-drum-loop  -->
+  <audio data-key="67" src="sounds/loops/filler.wav"></audio>
+
+  <!-- credit: gman15 - stomp-drums; https://www.looperman.com/loops/detail/65696/stomp-drums-by-gman15-free-130bpm-rap-drum-loop -->
+  <audio data-key="86" src="sounds/loops/stomp-drums.wav"></audio>
+
+  <!-- credit: kiestyleproductions - trappin-in-the-80s; https://www.looperman.com/loops/detail/127924/trappin-in-the-80s-by-kiestyleproductions-free-131bpm-trap-synth-loop -->
+  <audio data-key="66" src="sounds/loops/trappin-in-the-80s.wav"></audio>
+
+  <!-- credit: noizecollector - 007-trapbeat-drumloop-130bpm; https://www.looperman.com/loops/detail/59220/007-trapbeat-drumloop-130bpm-by-ygproductions-free-130bpm-rap-drum-loop  -->
+  <audio data-key="78" src="sounds/loops/trapbeat.wav"></audio>
+
+  <!-- credit: jakattak033 - kendrick-lamar-style-drum.wav; https://www.looperman.com/loops/detail/127928/kendrick-lamar-style-drum-by-jakattak033-free-130bpm-hip-hop-drum-loop  -->
+  <audio data-key="77" src="sounds/loops/kendrick-lamar-style-drum.wav"></audio>
+
+
+
+
+
+
+
+
+
+
 
 <script src="lp-code.js"></script>
 </body>
