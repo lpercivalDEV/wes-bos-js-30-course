@@ -22,6 +22,9 @@ window.addEventListener('keydown', function(e){
     console.log(audio);
     if(!audio) return; //stops function from running
 
+    // 'rewinds' audio element to allow it is played over again if key is hit repeatedly
+    audio.currentTime = 0;
+
     //plays audio element if it exists
     audio.play();
 
